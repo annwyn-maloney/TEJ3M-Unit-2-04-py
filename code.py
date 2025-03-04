@@ -7,9 +7,9 @@ import board
 import time 
 import digitalio
 
-R_LED = digitalio.DigitalInOut(board.GP11) 
-G_LED = digitalio.DigitalInOut(board.GP12) 
-B_LED = digitalio.DigitalInOut(board.GP13) 
+R_LED.value = digitalio.DigitalInOut(board.GP11) 
+G_LED.value = digitalio.DigitalInOut(board.GP12) 
+B_LED.value = digitalio.DigitalInOut(board.GP13) 
 
 blink_time = 1 
 while True: 
