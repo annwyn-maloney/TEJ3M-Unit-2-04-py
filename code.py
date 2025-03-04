@@ -17,33 +17,39 @@ while True:
   G_LED = False
   B_LED = False
 
-  
+  #red is turned on
   R_LED.value = True
   time.sleep(blink_time) 
-  
+
+  #green is turned on
   R_LED.value = False
   G_LED.value = True 
   time.sleep(blink_time) 
-  
+
+  #blue is turned on 
   G_LED.value = False
   B_LED.value = True 
   time.sleep(blink_time) 
-  
+
+  #red and green on at the same time to create yellow
   B_LED.value = False
   R_LED.value = True
   G_LED.value = True
   time.sleep(blink_time) 
-  
+
+  #green and blue on at the same time to create cyan 
   R_LED.value = False
   G_LED.value = True
   B_LED.value = True
   time.sleep(blink_time) 
-  
+
+  #red and green on at the same time to create magenta
   G_LED.value = False
   B_LED.value = True 
   R_LED.value = True
   time.sleep(blink_time)
-  
+
+  #all colours on to create white
   B_LED.value = True
   R_LED.value = True
   G_LED.value = True
