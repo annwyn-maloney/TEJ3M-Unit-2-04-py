@@ -38,7 +38,7 @@ while True:
   time.sleep(blink_time) 
 
   #green and blue on at the same time to create cyan 
-  R_led.value = False
+  R_LED.value = False
   G_LED.value = True
   B_LED.value = True
   time.sleep(blink_time) 
