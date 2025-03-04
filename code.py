@@ -11,11 +11,15 @@ R_LED.value = digitalio.DigitalInOut(board.GP11)
 G_LED.value = digitalio.DigitalInOut(board.GP12) 
 B_LED.value = digitalio.DigitalInOut(board.GP13) 
 
+R_LED.direction = digitalio.Direction.OUTPUT
+G_LED.direction = digitalio.Direction.OUTPUT
+B_LED.direction = digitalio.Direction.OUTPUT
+
 blink_time = 1 
 while True: 
-  R_LED = False
-  G_LED = False
-  B_LED = False
+  R_LED.value = False
+  G_LED.value = False
+  B_LED.value = False
 
   #red is turned on
   R_LED.value = True
@@ -55,7 +59,11 @@ while True:
   G_LED.value = True
   time.sleep(blink_time)
 
-blink_time += 1 
+  #all colous are off
+  G_LED.value = False  
+  B_LED.value = False 
+  R_LED.value = False 
+  time.sleep(blink_time) 
   
 
 
