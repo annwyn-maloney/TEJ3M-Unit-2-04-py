@@ -15,6 +15,7 @@ R_LED.direction = digitalio.Direction.OUTPUT
 G_LED.direction = digitalio.Direction.OUTPUT
 B_LED.direction = digitalio.Direction.OUTPUT
 
+#loop fovever
 blink_time = 1 
 while True: 
   R_LED.value = False
@@ -64,8 +65,3 @@ while True:
   B_LED.value = False 
   R_LED.value = False 
   time.sleep(blink_time) 
-  
-
-
-
-
