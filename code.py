@@ -1,7 +1,7 @@
 """
 Created by Annwyn M. 
 Created on Mar 4/2025
-This makes an RGB LED light up and blink with different colours 
+This makes an RGB LED light up and blink with different colours using the different LED bulbs
 """
 import board 
 import time 
@@ -26,7 +26,7 @@ while True:
   time.sleep(blink_time) 
 
   #green is turned on
-  R_LED.value = False
+  R_LED.value = False #turn off the red to put green on, repeat with other colours 
   G_LED.value = True 
   time.sleep(blink_time) 
 
@@ -36,7 +36,7 @@ while True:
   time.sleep(blink_time) 
 
   #red and green on at the same time to create yellow
-  B_LED.value = False
+  B_LED.value = False 
   R_LED.value = True
   G_LED.value = True
   time.sleep(blink_time) 
